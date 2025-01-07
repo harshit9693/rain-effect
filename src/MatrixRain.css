@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #000428, #004e92);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Game Header */
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-header h1 {
+  font-size: 2.5rem;
+  color: #20c20e;
+  text-shadow: 0 0 10px #20c20e;
+}
+
+.game-header p {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 5px;
+  text-shadow: 0 0 5px #aaa;
+}
+
+/* Matrix Container */
+.matrix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 90vh;
+}
+
+/* Matrix Grid */
+.matrix-grid {
+  display: grid;
+  width: 90vmin; /* Ensures grid fits within the viewport */
+  height: 90vmin; /* Matches width for a square grid */
+  gap: 2px; /* Space between cells */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Matrix Cell */
+.matrix-cell {
+  width: 100%; /* Ensures cells scale dynamically */
+  height: 100%; /* Maintains square cells */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.1s ease;
+}
+
+/* Game Footer */
+.game-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+  text-shadow: 0 0 5px #aaa;
+}
+
+.game-footer p {
+  margin: 0;
+}
+
+.game-footer p span {
+  color: #20c20e;
+  font-weight: bold;
+}
